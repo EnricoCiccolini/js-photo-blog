@@ -8,14 +8,14 @@ const wallElement = document.getElementById('container-photo')
 
 let result = ''
 axios.get(urlClient).then((response) =>{
-    console.log(response.data['0'].url )
+   // console.log(response.data['0'].url )
 const ceck = response.data
   for (let i = 0; i < ceck.length; i++) {
 
     console.log (' sono nel ciclo')
  console.log(ceck[i])
  result = result + `
-    <div class="card col-4" style="width: 18rem;">
+    <div class="card col-12 col-md-6 col-lg-4 col-xl-4" style="width: 18rem;">
         <div class='p-4 position-static bg-light'>
             <div class="position-absolute top-0 start-50 translate-middle"><img src="img/pin.svg"
                     alt="puntina"></div>

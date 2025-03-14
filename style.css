@@ -12,3 +12,7 @@ h1{
 .card-Text{
     font-family: "Sometype Mono", monospace;
 }
+
+.container{
+    max-width: 1200px;
+}
