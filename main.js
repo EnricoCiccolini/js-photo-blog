@@ -15,7 +15,8 @@ const ceck = response.data
     console.log (' sono nel ciclo')
  console.log(ceck[i])
  result = result + `
-    <div class="card col-12 col-md-6 col-lg-4 col-xl-4" style="width: 18rem;">
+    <div class="col-12 col-md-6 col-lg-4 col-xl-4" style="width: 18rem;">
+    <div class="card " style="width: 18rem;">
         <div class='p-4 position-static bg-light'>
             <div class="position-absolute top-0 start-50 translate-middle"><img src="img/pin.svg"
                     alt="puntina"></div>
