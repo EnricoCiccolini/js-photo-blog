@@ -19,7 +19,7 @@ const ceck = response.data
         <div class='p-4 position-static bg-light'>
             <div class="position-absolute top-0 start-50 translate-middle"><img src="img/pin.svg"
                     alt="puntina"></div>
-                    <img src="${ceck[i].url}" class="card-img-top" alt=" ${ceck[i].title} ">
+                    <img src="${ceck[i].url}" class="card-img-top " alt=" ${ceck[i].title} ">
                 <title>${ceck[i].title}</title>
                 <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
                     dy=".3em">${ceck[i].title}</text>
