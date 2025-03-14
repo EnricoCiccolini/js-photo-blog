@@ -6,13 +6,16 @@ body{
     background-image: url(img/cork.png);
 }
 
-h1{
+.tx-edu{
     font-family: "Edu TAS Beginner", cursive;
 }
+
+
+/*
 .card-Text{
     font-family: "Sometype Mono", monospace;
 }
-
+*/
 .container{
     max-width: 1200px;
 }
