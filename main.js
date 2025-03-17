@@ -54,9 +54,9 @@ axios.get(urlClient).then((response) => {
     for (let i = 0; i < cardElement.length; i++) {
 
         cardElement[i].addEventListener("click", function () {
-            const currentcard = document.querySelectorAll('.card-img-top')
-            console.log(currentcard)
-            replaceElement.src = currentcard[i].src
+            const currentcard = cardElement[i].querySelector('.card-img-top')
+           // console.log(currentcard)
+            replaceElement.src = currentcard.src
             overElement.classList.remove('d-none')
             overElement.classList.add('d-block')
             bodyElement.classList.add('body-hover')
