@@ -29,7 +29,7 @@ axios.get(urlClient).then((response) => {
         // console.log(' sono nel ciclo')
         // console.log(ceck[i])
         result = result + `
-    <div id="${i}" class="col-12 col-md-6 col-lg-4 col-xl-4" style="width: 18rem;">
+    <div id="card${i}" class="col-12 col-md-6 col-lg-4 col-xl-4" style="width: 18rem;">
         <div class="card " style="width: 18rem;">
             <div class='p-4 position-static bg-light'>
                 <div class="position-absolute top-0 start-50 translate-middle pin"><img src="img/pin.svg"

@@ -19,7 +19,9 @@ body {
 .container {
     max-width: 1200px;
 }
-
+.container-pic-hover{
+    max-width: 600px;
+}
 
 
 #over {
