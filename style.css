@@ -40,3 +40,15 @@ body {
     float: inline-end;
 }
 
+
+.card:hover {
+
+transform: scale(1.1) rotate(5deg);
+z-index: 2;
+box-shadow: 10px 10px 5px #363636;
+}
+
+.card:hover .pin{
+
+   display: none;
+    }
