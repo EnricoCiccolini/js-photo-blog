@@ -52,6 +52,18 @@ axios.get(urlClient).then((response) => {
     const cardElement = document.querySelectorAll('.card')
     console.log(cardElement)
     for (let i = 0; i < cardElement.length; i++) {
+
+        cardElement[i].addEventListener("click", function () {
+            const currentcard = document.querySelectorAll('.card-img-top')
+            console.log(currentcard)
+            replaceElement.src = currentcard[i].src
+            overElement.classList.remove('d-none')
+            overElement.classList.add('d-block')
+            bodyElement.classList.add('body-hover')
+        })
+    }
+/*
+    for (let i = 0; i < cardElement.length; i++) {
         cardElement[i].addEventListener("click", function () {
             const currentcard = this.querySelector('.card-img-top')
             replaceElement.src = currentcard.src
@@ -61,8 +73,8 @@ axios.get(urlClient).then((response) => {
           
 
         })
-    }
-
+    } 
+*/
 })
     .catch(error => {
         console.log("errore ")
