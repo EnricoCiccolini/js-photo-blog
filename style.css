@@ -1,21 +1,42 @@
-header{
+header {
     background-image: url(img/wall.png);
 }
 
-body{
+body {
     background-image: url(img/cork.png);
 }
 
-.tx-edu{
+.tx-edu {
     font-family: "Edu TAS Beginner", cursive;
 }
-
 
 /*
 .card-Text{
     font-family: "Sometype Mono", monospace;
 }
 */
-.container{
+
+.container {
     max-width: 1200px;
 }
+
+
+
+#over {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+    align-content: center;
+    justify-items: anchor-center;
+}
+.button{
+    float: inline-end;
+}
+
