@@ -10,11 +10,11 @@ body {
     font-family: "Edu TAS Beginner", cursive;
 }
 
-/*
-.card-Text{
+
+.date-Text {
     font-family: "Sometype Mono", monospace;
 }
-*/
+
 
 .container {
     max-width: 1200px;
@@ -35,20 +35,28 @@ body {
     cursor: pointer;
     align-content: center;
     justify-items: anchor-center;
+
 }
-.button{
+
+.button {
     float: inline-end;
 }
 
 
 .card:hover {
 
-transform: scale(1.1) rotate(5deg);
-z-index: 2;
-box-shadow: 10px 10px 5px #363636;
+    transform: scale(1.1) rotate(5deg);
+    z-index: 2;
+    box-shadow: 10px 10px 5px #363636;
 }
 
-.card:hover .pin{
+.card:hover .pin {
 
-   display: none;
-    }
+    display: none;
+}
+
+
+.body-hover {
+    overflow: hidden;
+    cursor: pointer;
+}

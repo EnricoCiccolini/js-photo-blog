@@ -7,6 +7,7 @@ const wallElement = document.getElementById('container-photo')
 
 const overElement = document.getElementById('over')
 const replaceElement = document.getElementById('replace')
+const bodyElement = document.querySelector('body')
 
 let result = ''
 
@@ -16,6 +17,7 @@ const buttonElement = document.querySelector('.button')
 buttonElement.addEventListener('click', function () {
     overElement.classList.remove('d-block')
     overElement.classList.add('d-none')
+    bodyElement.classList.remove('body-hover')
 
 })
 
@@ -33,12 +35,12 @@ axios.get(urlClient).then((response) => {
                 <div class="position-absolute top-0 start-50 translate-middle pin"><img src="img/pin.svg"
                     alt="puntina"></div>
                     <img src="${ceck[i].url}" class="card-img-top " alt=" ${ceck[i].title} ">
-                    <title>${ceck[i].title}</title>
+                    <title>${ceck[i].date}</title>
                     <rect width="100%" height="100%" fill="#868e96"></rect>
-                    <text x="50%" y="50%" fill="#dee2e6" dy=".3em">${ceck[i].title}</text> 
+                    <text class='date-Text' x="50%" y="50%" fill="#dee2e6" dy=".3em">${ceck[i].date}</text> 
                 </div>
                 <div class="card-body">
-                <p class="card-text">${ceck[i].date}</p>
+                <p class="card-text">${ceck[i].title}</p>
                 </div>
             </div>
         </div>
@@ -52,10 +54,11 @@ axios.get(urlClient).then((response) => {
     for (let i = 0; i < cardElement.length; i++) {
         cardElement[i].addEventListener("click", function () {
             const currentcard = this.querySelector('.card-img-top')
-
             replaceElement.src = currentcard.src
             overElement.classList.remove('d-none')
             overElement.classList.add('d-block')
+            bodyElement.classList.add('body-hover')
+          
 
         })
     }
