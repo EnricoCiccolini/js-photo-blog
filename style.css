@@ -39,10 +39,13 @@ body {
 }
 
 .button {
+    
     float: inline-end;
 }
 
-
+.button:hover {
+    transform: scale(1.1);
+}
 .card:hover {
 
     transform: scale(1.1) rotate(5deg);
